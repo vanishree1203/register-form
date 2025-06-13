@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register Form</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+    }
+
+    .left {
+      width: 50%;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb') no-repeat center center/cover;
+      color: white;
+      padding: 100px 40px;
+      position: relative;
+    }
+
+    .left h1 {
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+
+    .left p {
+      font-size: 18px;
+      max-width: 300px;
+    }
+
+    .right {
+      width: 50%;
+      background: white;
+      padding: 60px 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .right h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .right p {
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+    .right p a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+    }
+
+    .input-group label {
+      display: block;
+      font-size: 13px;
+      margin-bottom: 5px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: none;
+      border-bottom: 1px solid #aaa;
+      outline: none;
+    }
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    .checkbox input {
+      margin-right: 10px;
+    }
+
+    .login-btn {
+      background: red;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 25px;
+      width: 120px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .social-login {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .social-login button {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .facebook { background-color: #3b5998; }
+    .twitter { background-color: #1da1f2; }
+    .google { background-color: #db4437; }
+  </style>
+</head>
+<body>
+  <div class="left">
+    <h1>Hello<br>World.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  </div>
+
+  <div class="right">
+    <h2>Register</h2>
+    <p>Don't have an account? <a href="#">Create your account</a>, it takes less than a minute.</p>
+
+    <div class="input-group">
+      <label for="name">NAME</label>
+      <input type="text" id="name" />
+    </div>
+
+    <div class="input-group">
+      <label for="email">EMAIL ID</label>
+      <input type="email" id="email" />
+    </div>
+
+    <div class="input-group">
+      <label for="phone">PHONE NO:</label>
+      <input type="text" id="phone" value="+62" />
+    </div>
+
+    <div class="input-group">
+      <label for="password">PASSWORD</label>
+      <input type="password" id="password" />
+    </div>
+
+    <div class="checkbox">
+      <input type="checkbox" id="terms" />
+      <label for="terms">I accept terms and conditions & privacy policy</label>
+    </div>
+
+    <button class="login-btn">LOGIN</button>
+
+    <p>Login with social media</p>
+    <div class="social-login">
+      <button class="facebook">Facebook</button>
+      <button class="twitter">Twitter</button>
+      <button class="google">Google+</button>
+    </div>
+  </div>
+</body>
+</html>
